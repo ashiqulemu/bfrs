@@ -2,8 +2,12 @@
   color: #FFD653 !important;
 }
 
+.txt-secondary {
+  color: #1E3A58 !important;
+}
+
 .bg-secondary {
-  background: #1B212C !important;
+  background: #1E3A58 !important;
 }
 
 .footer-bg {
@@ -17,7 +21,7 @@ html {
 .section-title {
   margin-left: 15px;
   position: relative;
-  font-family: 'poppins-light';
+  font-family: 'poppins-bold';
 }
 
 .section-title:after {
@@ -38,9 +42,21 @@ html {
 }
 
 .card-style .content {
-  padding: 5px 20px 30px 20px;
+  padding: 5px 20px 25px 20px;
   background: #fff;
   font-family: 'poppins-Light';
+}
+
+.card-style .content .title {
+  font-size: 18px;
+  margin: 12px 0 7px;
+  color: #1E3A58 !important;
+  text-transform: capitalize;
+  font-family: 'poppins-medium';
+}
+
+.card-style .content p {
+  font-size: 15px;
 }
 
 @font-face {
@@ -70,7 +86,7 @@ body {
 }
 
 .topbar {
-  background: #1B212C !important;
+  background: #1E3A58 !important;
 }
 
 .topbar .inner {
@@ -101,7 +117,7 @@ body {
           justify-content: center;
   color: #FFD653 !important;
   height: 100%;
-  color: #1B212C !important;
+  color: #1E3A58 !important;
   background: #ffd03a;
   margin-right: 2px;
 }
@@ -162,6 +178,10 @@ body {
   padding: 10px 0;
 }
 
+.blogBox {
+  margin-bottom: 20px;
+}
+
 .slick-next {
   height: 35px !important;
   width: 35px !important;
@@ -169,7 +189,7 @@ body {
 }
 
 .slick-next:hover {
-  background: #1B212C !important;
+  background: #1E3A58 !important;
 }
 
 .slick-prev {
@@ -179,7 +199,7 @@ body {
 }
 
 .slick-prev:hover {
-  background: #1B212C !important;
+  background: #1E3A58 !important;
 }
 
 .slick-dots li button {
@@ -502,13 +522,27 @@ footer .nav-item a:hover {
   border: 1px solid #e91e63;
 }
 
+.sticker {
+  position: absolute;
+  top: 0;
+  width: 170px;
+  right: 56px;
+}
+
+.news {
+  overflow: hidden;
+  position: relative;
+  padding: 50px 0;
+  background-image: radial-gradient(circle at 0 2%, #25395a, #162031 124%);
+}
+
 .btn-theme {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #121212;
-  background: #FFD653 !important;
-  padding: 5px 14px;
+  color: #ffffff;
+  background: #1E3A58 !important;
+  padding: 7px 18px;
   border-radius: 4px;
   -webkit-transition: all 0.3s ease-in;
   -webkit-transition: 0.3s ease-in;
@@ -520,7 +554,7 @@ footer .nav-item a:hover {
 }
 
 .btn-theme:hover {
-  background: #1B212C !important;
+  background: #1E3A58 !important;
   border-color: #FFD653 !important;
   color: #FFD653 !important;
 }
