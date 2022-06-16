@@ -21,7 +21,8 @@ $white: #fff;
 
 
 .footer-bg {
-    background: $primary;
+    background:url('../images/footer-bg.png');
+    background-size: 100% 100%;
 }
 
 html {
@@ -31,20 +32,46 @@ html {
 .section-title {
     margin-left: 15px;
     position: relative;
-    font-family: 'poppins-bold'; 
+    font-family: 'poppins-bold';
 
     &:after {
         position: absolute;
         content: '';
         width: 60px;
         height: 4px;
-        background-color:$primary;
+        background-color: $primary;
         bottom: -10px;
         left: 0;
     }
 }
 
+.newsletter{
+    margin-top: 30px; 
 
+    input[type='text']{
+        min-width: 268px;
+        height: 36px;
+        outline: 0;
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    .go{
+         
+        background-color: $secondary;
+        border-radius: 0;
+        height: 36px;
+        border:0;
+        outline: 0;
+        padding: 0 10px;
+        margin: 0; 
+        outline: 0;
+        color: $white;
+        &:hover{
+            
+            color: $primary;
+        }
+    }
+}
 
 .card-style {
     overflow: hidden;
@@ -52,18 +79,47 @@ html {
     box-shadow: 0 4px 24px 0 #0000001a;
 
     .content {
-        padding:5px 20px 25px 20px;
+        padding: 5px 20px 25px 20px;
         background: #fff;
         font-family: 'poppins-Light';
-        .title{
+
+        .title {
             font-size: 18px;
             margin: 12px 0 7px;
             color: $secondary;
             text-transform: capitalize;
-            font-family:'poppins-medium';
+            font-family: 'poppins-medium';
         }
-        p{
-            font-size: 15px; 
+
+        p {
+            font-size: 15px;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                border: 1px solid lightgrey;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 2px;
+                height: 35px;
+                width: 35px;
+                border-radius: 4px;
+                color: $primary;
+                background-color: $secondary;
+
+                .iconify {
+                    font-size: 17px;
+                }
+
+                &:hover {
+                    color: $white !important;
+                }
+            }
         }
     }
 }
@@ -187,30 +243,41 @@ body {
     padding: 50px 0;
 }
 
+//governance
+
+.governance {
+    background-color: $white;
+    padding: 60px 0;
+}
+
 // slider css
 
 
-.slick-track{
+.slick-track {
     padding: 10px 0;
 }
 
-.blogBox{
+.blogBox {
     margin-bottom: 20px;
-   
+
 }
-.slick-next{
-    height: 35px!important;
-    width: 35px!important;
+
+.slick-next {
+    height: 35px !important;
+    width: 35px !important;
     background: $primary;
-    &:hover{
+
+    &:hover {
         background: $secondary;
     }
 }
+
 .slick-prev {
-    height: 35px!important;
-    width: 35px!important;
+    height: 35px !important;
+    width: 35px !important;
     background: $primary;
-    &:hover{
+
+    &:hover {
         background: $secondary;
     }
 }
@@ -242,7 +309,7 @@ body {
         width: 10px !important;
         border-radius: 50%;
         border: 2px solid #fff !important;
-        
+
     }
 }
 
@@ -468,9 +535,9 @@ footer {
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -o-transition: 0.3s;
-        transition: 0.3s; 
+        transition: 0.3s;
 
-       
+
 
         &:hover {
             box-shadow: 0px 10px 20px #0000001a;
@@ -551,25 +618,51 @@ footer {
 }
 
 
-.sticker{
+.sticker {
     position: absolute;
     top: 0;
     width: 170px;
     right: 56px;
-     
+
 }
+
+
+//chairman section 
+
+.chairman {
+    background-color: #fffcae;
+    padding: 70px 0;
+
+    .chairman-photo {
+        height: 70vh;
+        background: url('../images/charman-bg.svg');
+        background-size: 100% 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .photo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 6px solid white;
+        }
+    }
+}
+
 
 //news 
 
-.news{
+.news {
     overflow: hidden;
     position: relative;
     padding: 50px 0;
-    background-image: radial-gradient(circle at 0 2%,#25395a,#162031 124%);
+    background-image: radial-gradient(circle at 0 2%, #25395a, #162031 124%);
     // background-image: radial-gradient(circle at 0 2%, #5c36f4, #bb1ee9 124%);
 }
 
- 
+
 
 
 .btn-theme {
@@ -707,4 +800,21 @@ footer {
             filter: saturate(2);
         }
     }
+}
+
+// testimonial
+
+.testimonial-section {
+    background: url('../images/testimonials.jpg');
+    background-size: 100% 100%;
+    padding: 100px 0;
+}
+
+.partners-section {
+    padding: 60px 0;
+}
+
+.connect {
+    padding: 60px 0;
+    background-color: $secondary;
 }

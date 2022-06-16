@@ -11,7 +11,8 @@
 }
 
 .footer-bg {
-  background: #FFD653 !important;
+  background: url("../images/footer-bg.png");
+  background-size: 100% 100%;
 }
 
 html {
@@ -32,6 +33,34 @@ html {
   background-color: #FFD653 !important;
   bottom: -10px;
   left: 0;
+}
+
+.newsletter {
+  margin-top: 30px;
+}
+
+.newsletter input[type='text'] {
+  min-width: 268px;
+  height: 36px;
+  outline: 0;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.newsletter .go {
+  background-color: #1E3A58 !important;
+  border-radius: 0;
+  height: 36px;
+  border: 0;
+  outline: 0;
+  padding: 0 10px;
+  margin: 0;
+  outline: 0;
+  color: #fff;
+}
+
+.newsletter .go:hover {
+  color: #FFD653 !important;
 }
 
 .card-style {
@@ -57,6 +86,45 @@ html {
 
 .card-style .content p {
   font-size: 15px;
+}
+
+.card-style .content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-style .content .social a {
+  border: 1px solid lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 2px;
+  height: 35px;
+  width: 35px;
+  border-radius: 4px;
+  color: #FFD653 !important;
+  background-color: #1E3A58 !important;
+}
+
+.card-style .content .social a .iconify {
+  font-size: 17px;
+}
+
+.card-style .content .social a:hover {
+  color: #fff !important;
 }
 
 @font-face {
@@ -172,6 +240,11 @@ body {
 
 .recent_blog {
   padding: 50px 0;
+}
+
+.governance {
+  background-color: #fff;
+  padding: 60px 0;
 }
 
 .slick-track {
@@ -529,6 +602,35 @@ footer .nav-item a:hover {
   right: 56px;
 }
 
+.chairman {
+  background-color: #fffcae;
+  padding: 70px 0;
+}
+
+.chairman .chairman-photo {
+  height: 70vh;
+  background: url("../images/charman-bg.svg");
+  background-size: 100% 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chairman .chairman-photo .photo {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 6px solid white;
+}
+
 .news {
   overflow: hidden;
   position: relative;
@@ -680,5 +782,20 @@ footer .nav-item a:hover {
 .conatactInfo img:hover {
   -webkit-filter: saturate(2);
           filter: saturate(2);
+}
+
+.testimonial-section {
+  background: url("../images/testimonials.jpg");
+  background-size: 100% 100%;
+  padding: 100px 0;
+}
+
+.partners-section {
+  padding: 60px 0;
+}
+
+.connect {
+  padding: 60px 0;
+  background-color: #1E3A58 !important;
 }
 /*# sourceMappingURL=app.css.map */
