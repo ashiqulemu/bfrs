@@ -818,3 +818,20 @@ footer {
     padding: 60px 0;
     background-color: $secondary;
 }
+
+
+// gallery 
+
+#imageGallery{
+    display: flex!important; 
+    max-width: 100% !important;;
+     text-align: center;
+     flex-wrap: wrap;
+    padding: 0;
+
+    img{
+        width: 100%;
+        margin-bottom:13px;
+    }
+    
+}
