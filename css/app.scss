@@ -833,6 +833,12 @@ footer {
         width: 100%;
         margin-bottom:13px;
     }
+    a{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
     
 }
 
@@ -844,5 +850,13 @@ footer {
         &:hover{
             transform: translateY(-5px);
         }
+    }
+}
+
+// contact 
+
+.contact{
+    .form-group{
+        margin-bottom: 15px;
     }
 }

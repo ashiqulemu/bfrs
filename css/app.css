@@ -650,10 +650,20 @@ footer .nav-item a:hover {
   width: 100%;
   margin-bottom: 13px;
 }
+#imageGallery a {
+  transition: all 0.3s ease-in-out;
+}
+#imageGallery a:hover {
+  transform: translateY(-5px);
+}
 
 .publications a {
   transition: all 0.3s ease-in-out;
 }
 .publications a:hover {
   transform: translateY(-5px);
+}
+
+.contact .form-group {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=app.css.map */
