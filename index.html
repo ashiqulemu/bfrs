@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
 </head>
 
-<body>
+<body  oncontextmenu="return false;">
     <!-- topbar -->
     <section class="topbar bg-secondary ">
         <div class="container">
@@ -921,6 +921,14 @@
         });
 
 
+    </script>
+       <script>
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && e.keyCode === 85) {
+                alert("you cant get my code ever :)");
+                return false;
+            }
+        };
     </script>
 
 </body>

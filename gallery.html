@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body oncontextmenu="return false;">
     <!-- topbar -->
     <section class="topbar bg-secondary ">
         <div class="container">
@@ -137,54 +137,17 @@
             <div class="row mt-2" id="imageGallery">
                 <div class="col-lg-3">
                     <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
                         <div class="txt-secondary my-2 fw-bold fs-6">
-                             Title goes here                             
+                            Title goes here
                         </div>
                     </a>
 
                 </div>
                 <div class="col-lg-3">
                     <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
-                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here 
-                            
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-lg-3">
-                    <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
-                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here 
-                            
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-lg-3">
-                    <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
-                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here 
-                            
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-lg-3">
-                    <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
-                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here 
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
+                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here
 
                         </div>
                     </a>
@@ -192,10 +155,8 @@
                 </div>
                 <div class="col-lg-3">
                     <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
-                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here 
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
+                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here
 
                         </div>
                     </a>
@@ -203,10 +164,8 @@
                 </div>
                 <div class="col-lg-3">
                     <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
-                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here 
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
+                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here
 
                         </div>
                     </a>
@@ -214,10 +173,35 @@
                 </div>
                 <div class="col-lg-3">
                     <a class="card card-style mb-3">
-                        <img class="mb-0"
-                            src="./images/blog/1.png"
-                            alt="Sample Image 1">
-                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here 
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
+                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3">
+                    <a class="card card-style mb-3">
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
+                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3">
+                    <a class="card card-style mb-3">
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
+                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-3">
+                    <a class="card card-style mb-3">
+                        <img class="mb-0" src="./images/blog/1.png" alt="Sample Image 1">
+                        <div class="txt-secondary my-2 fw-bold fs-6"> Title goes here
 
                         </div>
                     </a>
@@ -342,8 +326,17 @@
 
         });
 
-    </script>
 
+
+    </script>
+    <script>
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && e.keyCode === 85) {
+                alert("you cant get my code ever :)");
+                return false;
+            }
+        };
+    </script>
 </body>
 
 </html>
