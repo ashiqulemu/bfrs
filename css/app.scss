@@ -1236,3 +1236,13 @@ footer {
       }
     }
   }
+
+  .team{
+    .card{
+     transition: all 0.3s ease-in-out;
+     margin-bottom:25px;
+     &:hover{
+         transform: translateY(-10px);
+     }
+    } 
+ }

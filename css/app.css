@@ -955,4 +955,12 @@ footer .nav-item a:hover {
 }
 .blog-details .blog-content .content .tag-social-link .social-links li a i {
   margin-top: 8px;
+}
+
+.team .card {
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 25px;
+}
+.team .card:hover {
+  transform: translateY(-10px);
 }/*# sourceMappingURL=app.css.map */
