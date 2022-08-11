@@ -190,9 +190,18 @@ body {
   padding: 50px 0;
 }
 
-.governance {
+.default {
   background-color: #fff;
   padding: 60px 0;
+}
+.default.partner a .blogBox {
+  transition: all 0.4s ease-in-out;
+}
+.default.partner a:hover .blogBox {
+  transform: translateY(-5px);
+}
+.default.partner a:hover .blogBox h3 {
+  color: black;
 }
 
 .slick-track {
