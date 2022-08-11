@@ -1,3 +1,8 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
 .txt-primary {
   color: #FFD653 !important;
 }
@@ -194,14 +199,60 @@ body {
   background-color: #fff;
   padding: 60px 0;
 }
-.default.partner a .blogBox {
-  transition: all 0.4s ease-in-out;
+.default.partner {
+  background-color: #FEFEFE;
 }
-.default.partner a:hover .blogBox {
-  transform: translateY(-5px);
+.default.partner .itemBox {
+  display: flex;
+  align-items: center;
 }
-.default.partner a:hover .blogBox h3 {
-  color: black;
+@media (max-width: 768px) {
+  .default.partner .itemBox {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.default.partner h5 {
+  color: #1E3A58 !important;
+  text-transform: uppercase;
+  font-family: "poppins-bold";
+  padding-left: 15px;
+}
+.default.partner h5:hover {
+  color: #FFD653 !important;
+}
+
+.gelleryBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gelleryBox .items {
+  margin: 2px 2px;
+  flex: 1;
+  flex-basis: 23%;
+}
+.gelleryBox .items a {
+  display: block;
+  position: relative;
+}
+.gelleryBox .items a:hover:after {
+  content: "🔍";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 215, 103, 0.7294117647);
+  justify-content: center;
+  align-items: center;
+}
+.gelleryBox .items img {
+  width: 100%;
 }
 
 .slick-track {
@@ -306,6 +357,27 @@ body {
   color: #fff !important;
   text-align: center;
   background: rgba(0, 0, 0, 0.342);
+}
+
+.governance .row img {
+  padding: 10px;
+}
+.governance .row:nth-child(even) {
+  background-color: #F1F1F1;
+}
+@media (max-width: 768px) {
+  .governance .row {
+    text-align: center;
+  }
+}
+.governance .row p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .governance .row p {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 #contact {

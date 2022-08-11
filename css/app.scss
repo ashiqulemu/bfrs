@@ -5,6 +5,10 @@ $secondary: #1E3A58 !important;
 $txt: #585858;
 $white: #fff;
 
+a {
+    text-decoration: none;
+}
+
 // needable  classes 
 
 .txt-primary {
@@ -252,23 +256,69 @@ body {
     padding: 60px 0;
 
     &.partner {
-        a {
-            .blogBox{
-                transition: all 0.4s ease-in-out;
+        background-color: #FEFEFE;
+
+        .itemBox {
+            display: flex;
+            align-items: center;
+
+            @media(max-width:768px) {
+                flex-direction: column;
+                text-align: center;
             }
+        }
+
+        h5 {
+            color: $secondary;
+            text-transform: uppercase;
+            font-family: "poppins-bold";
+            padding-left: 15px;
+
             &:hover {
-               .blogBox{
-                  transform: translateY(-5px);
-                  h3{
-                    color: black;
-                  }
-               }
+                color: $primary;
             }
         }
     }
 }
 
-// slider css
+.gelleryBox {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .items {
+        margin: 2px 2px;
+        flex: 1;
+        flex-basis: 23%;
+
+        a {
+            display: block;
+            position: relative;
+
+            &:hover {
+                &:after {
+                    content: "\01F50D";
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    right: 0;
+                    bottom: 0;
+                    background: #ffd767ba;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
 
 
 .slick-track {
@@ -403,7 +453,28 @@ body {
 }
 
 
-
+.governance {
+    .row {
+        img{
+            padding: 10px;
+        };
+        &:nth-child(even) {
+            background-color: #F1F1F1;
+        }
+        @media(max-width:768px){
+            text-align: center;
+             
+        }
+        p{
+            margin: 0;
+            
+            @media(max-width:768px){
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
 
 #contact {
     font-size: 16px;
